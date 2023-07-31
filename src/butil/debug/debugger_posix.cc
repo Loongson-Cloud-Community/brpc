@@ -4,6 +4,7 @@
 
 #include "butil/debug/debugger.h"
 #include "butil/build_config.h"
+#include "butil/threading/platform_thread.h"
 
 #include <errno.h>
 #include <fcntl.h>

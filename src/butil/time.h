@@ -250,7 +250,7 @@ inline uint64_t clock_cycles() {
     uint64_t stable_counter;
     uint64_t counter_id;
     __asm__ __volatile__ (
-        "rdtime.d %1, %0"
+        "rdtime.d %0, %1"
         : "=r" (stable_counter), "=r" (counter_id)
         );
     return stable_counter;
